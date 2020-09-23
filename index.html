@@ -5,170 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Web CV - Miguel Angel Puentes Ramirez" />
-    <meta name="author" content="Miguel Angel Puentes Ram" />
+    <meta name="author" content="Miguel Angel Puentes Ramirez" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Parcial 1 - Miguel Puentes - 201616771</title>
   </head>
   <body>
-    <div
-      class="d-sm-flex align-items-center justify-content-between mb-4 bg-dark"
-    >
-      <h1 class="h1 mb-0 text-white p-2">Restaurant & Lounge</h1>
-      <a
-        href="#"
-        data-toggle="modal"
-        data-target="#newMenuModal"
-        class="d-none d-sm-inline-block btn btn-md btn-primary shadow-sm"
-      >
-        <i class="fas fa-plus fa-sm text-white-50"></i>
-        <button class="btn">
-          <img class="btn-image" src="./assets/car.png" alt="" />2 productos
-        </button></a
-      >
+    <!--Titulo y carrito de compras-->
+    <div class="d-sm-flex align-items-center justify-content-between">
+      <a class="logob px-2">Restaurant & Lounge</a>
+      <button class="btn" id="btnShoppingCart">
+        <img class="btn-image" src="./assets/car.png" alt="" />0 items
+      </button>
     </div>
-
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-            <div class="container w-100"></div>
-            <h1 class="font-weight-bold"></h1>
-            <h2></h2>
-            <h3 class="font-weight-light">
-              <span class="badge badge-dark"></span>
-            </h3>
-            <h3 class="font-weight-light display-6">
-              <span class="badge badge-warning"></span>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow text-dark">
-      <div class="container">
-        <h1 class="navbar-brand">
-          <a href="./index.html">
-            <span class="badge badge-dark"></span>
-          </a>
-        </h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html"
-                >Burgers
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./projects.html">Tacos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Salads</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Desserts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Drinks & Sides</a>
-            </li>
-          </ul>
-        </div>
+    <hr />
+    <!--Banner Image-->
+    <img
+      src="./images/banner.png"
+      class="img-fluid py-2"
+      alt="Responsive image"
+      width="100%"
+    />
+    <hr />
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav py-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="burgersBtn"
+              >Burgers <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="tacosBtn">Tacos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="saladsBtn">Salads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="dessertsBtn">Desserts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="dsBtn">Drinks & Sides</a>
+          </li>
+        </ul>
       </div>
     </nav>
-    <section class="pt-1">
-      <div class="container bg-light">
-        <h2 class="font-weight-light"></h2>
+
+    <!--Titulo principal-->
+    <hr />
+    <div class="containter-fluid px-5 py-2">
+      <h1 id="mainTitle" class="text-center"></h1>
+    </div>
+    <hr />
+
+    <!--Contenedor de las cards de los productos-->
+    <div>
+      <div class="container">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-              <div class="card card-inverse card-primary">
-                <img class="card-img-top" src="./images/axon.png" />
-                <blockquote class="card-blockquote p-3">
-                  <p class="font-weight-bold">Veggie Burger</p>
-                  <footer>
-                    <!--Se me hace que usar p en vez de small quedaría mejor, ya que con small el texto se ve muy pequeño, y no es información irrelevante-->
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Iure, iste odio? Repellat nesciunt quo veniam neque,
-                      doloremque, nostrum, libero eveniet quae exercitationem
-                      veritatis repudiandae minus ad enim eligendi distinctio
-                      quasi.<br />
-                    </p>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-              <div class="card card-inverse card-primary">
-                <img class="card-img-top" src="./images/mastercard.png" />
-                <blockquote class="card-blockquote p-3">
-                  <p class="font-weight-bold">Mushroom Burger</p>
-                  <footer>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Atque minima, sapiente voluptates eos asperiores ut ad?
-                      Corporis ipsum velit error, officiis, hic incidunt fugiat
-                      quae labore consequuntur cum, in quod?
-                      <br />
-                    </p>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-              <div class="card card-inverse card-primary">
-                <img class="card-img-top" src="./images/yale.png" />
-                <blockquote class="card-blockquote p-3">
-                  <p class="font-weight-bold">Duck Breast Burger</p>
-                  <footer>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Dolores, maiores dolorem officiis voluptatibus vel, non
-                      ducimus aspernatur autem cum veniam unde voluptatum omnis,
-                      fuga quos velit hic possimus nesciunt dignissimos.<br />
-                    </p>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-              <div class="card card-inverse card-primary">
-                <img class="card-img-top" src="./images/abeeja.png" />
-                <blockquote class="card-blockquote p-3">
-                  <p class="font-weight-bold">Shripm Burger</p>
-                  <footer>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Fugit illo velit nobis, temporibus inventore illum
-                      similique et asperiores quod error, quas enim,
-                      exercitationem a facere fuga voluptates! Rem, saepe
-                      ipsa.<br />
-                    </p>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
+          <div class="row" id="cards-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Total detail -->
+    <div
+      class="modal-footer justify-content-rigth px-5"
+      id="footerButtons"
+    ></div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="sureModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Cancel the order
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Are you sure about cancelling the order?</div>
+          <div class="modal-footer">
+            
+            <button type="button" class="btn btn-outline-dark" onclick="reset()" data-dismiss="modal">
+              Yes, I want to cancel the order
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+            >
+            No, I want to continue adding products
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-3">
+        <strong
+          >Contact us: +57 3102105253 - info@restaurant.com @restaurant</strong
+        >
+      </div>
+    </footer>
+    <script src="./js/products.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
